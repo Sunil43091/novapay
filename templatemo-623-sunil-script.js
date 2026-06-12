@@ -1,7 +1,7 @@
 /*
 ================================================================================
-  NovaPay — Modern Financial Platform
-  Template: templatemo-623-novapay
+  Sunil — Modern Financial Platform
+  Template: templatemo-623-Sunil
   JavaScript
   Designed by TemplateMo  (https://templatemo.com)
 
@@ -21,17 +21,17 @@
 ================================================================================
 */
 
-const tickerData=[
-  {sym:'BTC/USD',price:'$67,240',chg:'+2.14%',up:true},
-  {sym:'ETH/USD',price:'$3,480',chg:'+1.82%',up:true},
-  {sym:'EUR/USD',price:'1.0841',chg:'-0.12%',up:false},
-  {sym:'GBP/USD',price:'1.2620',chg:'+0.08%',up:true},
-  {sym:'USD/JPY',price:'154.32',chg:'+0.24%',up:false},
-  {sym:'S&P 500',price:'5,248',chg:'+0.62%',up:true},
-  {sym:'NASDAQ',price:'16,428',chg:'+0.91%',up:true},
-  {sym:'USD/SGD',price:'1.3420',chg:'-0.05%',up:false},
-  {sym:'AUD/USD',price:'0.6580',chg:'+0.18%',up:true},
-  {sym:'XAU/USD',price:'$2,318',chg:'+0.44%',up:true},
+const tickerData = [
+  { sym: 'Website Traffic', price: '128K Visits', chg: '+12.4%', up: true },
+  { sym: 'Conversion Rate', price: '4.8%', chg: '+0.6%', up: true },
+  { sym: 'Bounce Rate', price: '32%', chg: '-3.2%', up: true },
+  { sym: 'Page Speed', price: '0.92s', chg: '+18%', up: true },
+  { sym: 'SEO Score', price: '94/100', chg: '+2.1%', up: true },
+  { sym: 'Leads Generated', price: '1,240', chg: '+8.7%', up: true },
+  { sym: 'UI Engagement', price: '76%', chg: '+5.4%', up: true },
+  { sym: 'Core Web Vitals', price: 'Good', chg: '+1.8%', up: true },
+  { sym: 'Server Uptime', price: '99.98%', chg: '+0.01%', up: true },
+  { sym: 'User Retention', price: '61%', chg: '+3.3%', up: true }
 ];
 const track=document.getElementById('tickerTrack');
 [...tickerData,...tickerData].forEach(t=>{
@@ -189,14 +189,35 @@ function togglePricing(){
   });
 }
 
-const faqs=[
-  {q:'How quickly can I start sending payments?',a:'You can be up and running in under 10 minutes. Create your account, verify your identity, and make your first transfer — no paperwork, no waiting.'},
-  {q:'What are the transaction fees?',a:'Starter accounts have zero fees up to $10K monthly volume. Growth and Enterprise plans have volume-based pricing starting at 0.5% per transaction, with no monthly minimums or hidden charges.'},
-  {q:'Which countries and currencies do you support?',a:'NovaPay supports payments in 190+ countries and holds balances in 35+ currencies including USD, EUR, GBP, JPY, SGD, AUD, CAD, CHF, and more. New currencies are added quarterly.'},
-  {q:'How does NovaPay keep my money safe?',a:"Your funds are held in regulated custodian accounts, fully segregated from NovaPay's operating capital. We're SOC 2 Type II certified, PCI DSS Level 1 compliant, and use 256-bit AES encryption on all data."},
-  {q:'Can I integrate NovaPay with my existing tools?',a:'Yes — our REST API and webhooks integrate with Xero, QuickBooks, Stripe, Shopify, and 200+ other platforms. We also offer native plugins for major e-commerce and accounting tools.'},
-  {q:'What support is available?',a:'Starter plans include email support with 24-hour response times. Growth plans get priority chat support. Enterprise clients receive a dedicated account manager and 24/7 phone support with guaranteed SLAs.'},
-  {q:'Can I use NovaPay for payroll?',a:'Absolutely. Our batch payment feature lets you pay hundreds of employees or contractors in multiple currencies simultaneously, with full audit logs and auto-generated payment reports.'},
+const faqs = [
+  {
+    q: "How quickly can I start my project?",
+    a: "You can get started within 24 hours. Once you share your requirements, we set up the project, finalize scope, and begin design or development immediately — no delays or complicated onboarding."
+  },
+  {
+    q: "How much do your services cost?",
+    a: "Pricing depends on the project scope. Simple websites start at affordable fixed rates, while advanced websites and web applications are custom quoted. We always provide transparent pricing with no hidden costs."
+  },
+  {
+    q: "What technologies do you use?",
+    a: "We work with modern web technologies including HTML, CSS, JavaScript, React, Next.js, PHP, Laravel, and WordPress depending on project requirements. We choose the best stack based on performance and scalability needs."
+  },
+  {
+    q: "Will my website be mobile-friendly?",
+    a: "Yes — every website we build is fully responsive and optimized for mobile, tablet, and desktop devices to ensure a seamless user experience across all screen sizes."
+  },
+  {
+    q: "Can you integrate third-party tools or APIs?",
+    a: "Yes. We integrate payment gateways, CRMs, analytics tools, booking systems, and custom APIs. We also connect websites with platforms like Shopify, WooCommerce, Stripe, and more."
+  },
+  {
+    q: "What kind of support do you provide after launch?",
+    a: "We provide post-launch support including bug fixes, updates, performance monitoring, and maintenance. Extended support plans are also available for ongoing improvements and security updates."
+  },
+  {
+    q: "Do you also provide maintenance services?",
+    a: "Yes. We offer monthly maintenance packages that include updates, backups, security checks, and small feature enhancements to keep your website running smoothly."
+  }
 ];
 const faqList=document.getElementById('faqList');
 faqs.forEach((f,i)=>{
@@ -222,13 +243,43 @@ function toggleAllFaq(){
     :'<line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>';
 }
 
-const testimonials=[
-  {q:'NovaPay cut our international settlement time from 3 days to under 2 seconds. It completely changed how we operate.',name:'Sarah Kim',role:'CFO at Hive Commerce',init:'SK'},
-  {q:"The multi-currency accounts saved us over $40K in FX fees last year. The rate transparency alone is worth it.",name:'James Adler',role:'Finance Director, Nomad Labs',init:'JA'},
-  {q:'Finally a fintech platform that doesn\'t feel like it was built in 2015. The dashboard is genuinely beautiful and fast.',name:'Priya Mehta',role:'Head of Ops, Stackflow',init:'PM'},
-  {q:'Migrated from our bank\'s business account in a weekend. The API docs are exceptional — engineers loved it.',name:'Tom Brennan',role:'CTO at Vaulted',init:'TB'},
-  {q:'The fraud detection caught three suspicious transactions before they hit our account. Incredible peace of mind.',name:'Liu Wei',role:'Founder, CloudMint',init:'LW'},
-  {q:'Our accountants love the automated reconciliation. What took 8 hours a month now takes 20 minutes.',name:'Amara Osei',role:'Controller, Drift Studio',init:'AO'},
+const testimonials = [
+  {
+    q: "Our new website completely transformed how customers perceive our brand. Leads increased within the first week of launch.",
+    name: "Sarah Kim",
+    role: "Marketing Director, Hive Commerce",
+    init: "SK"
+  },
+  {
+    q: "The redesign improved our conversion rate significantly. The UI feels modern, fast, and exactly what we needed.",
+    name: "James Adler",
+    role: "Business Owner, Nomad Labs",
+    init: "JA"
+  },
+  {
+    q: "Finally a web team that understands both design and performance. Our site now loads instantly and looks premium.",
+    name: "Priya Mehta",
+    role: "Founder, Stackflow Studio",
+    init: "PM"
+  },
+  {
+    q: "We migrated from an outdated website to a fully custom platform in no time. The development process was smooth and professional.",
+    name: "Tom Brennan",
+    role: "CTO, Vaulted Systems",
+    init: "TB"
+  },
+  {
+    q: "The attention to detail in UI/UX design is outstanding. Our customers constantly compliment the new experience.",
+    name: "Liu Wei",
+    role: "CEO, CloudMint",
+    init: "LW"
+  },
+  {
+    q: "Our internal workflow improved after the new dashboard system was built. Everything is now easier to manage and track.",
+    name: "Amara Osei",
+    role: "Operations Lead, Drift Studio",
+    init: "AO"
+  }
 ];
 const tt=document.getElementById('testiTrack');
 [...testimonials,...testimonials].forEach(t=>{
@@ -353,3 +404,12 @@ if(phoneFrame){
     kick();
   });
 }
+
+
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+
+  setTimeout(() => {
+    preloader.classList.add("hide");
+  }, 1200); // small delay for smooth feel
+});
